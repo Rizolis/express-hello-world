@@ -11,21 +11,15 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
-app.get("/pokemons", (req, res) => {
-  const pokemonsAsh = [
-    "Pikachu",
-    "Caterpie",
-    "Pidgeotto",
-    "Bulbasaur",
-    "Charmander",
-    "Squirtle",
-    "Krabby",
-    "Muk",
-    "Tauros",
-    "Lapras"
+app.post("/series", (req, res) => {
+  const seriesFavoritas = [
+    "Breaking Bad",
+    "Game of Thrones",
+    "The Boys"
   ];
-  res.json(pokemonsAsh);
+  res.json(seriesFavoritas);
 });
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
