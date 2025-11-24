@@ -11,16 +11,9 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
-app.post("/series", (req, res) => {
-  const seriesFavoritas = [
-    "Breaking Bad",
-    "Game of Thrones",
-    "The Boys"
-  ];
-  res.json(seriesFavoritas);
+app.get("/meunome", (req, res) => {
+  res.send("Meu nome é Vitor Arizoli Ramos Correa");
 });
-
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
